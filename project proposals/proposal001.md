@@ -7,3 +7,5 @@ services that I have planned:
   - app engine: is a node with a pre-built environmet for any web app from javascript to elixir without having to do any work and if you want manually add something you could ssh into it. 
   - actions: basicly firebase could functions, you build you functions and its run a docker container.
   - node: a docker container or virtial machine
+
+Satus: not happening.
