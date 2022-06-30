@@ -67,25 +67,25 @@ export default class App extends Page {
 
 ```csharp
 // main.cs
-using ourframework;
+using radium;
 using App;
 
 class Main {
     static void Main(args string[]) {
-        ourframework.render(new App, ourframework.createDomContainer("#app"))
+        radium.render(new App, radium.createDomContainer("#app"))
     } 
 }
 ```
 ```csharp
 // App.cs
-using ourframework;
-using ourframework.hooks;
+using radium;
+using radium.hooks;
 
 
 namespace App
 {
     [Route("/")]
-    class App : ourframework.component
+    class App : radium.component
     {
         [addState]
         int count; void setCount
@@ -105,6 +105,18 @@ namespace App
         }
     }
 }
+```
+
+```html
+<!-- index.html / index.cshtml -->
+<!DOCTYPE html>
+<html>
+<body>
+
+ <div id="app"></div>
+ 
+</body>
+</html>
 ```
 
 
